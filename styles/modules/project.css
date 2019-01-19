@@ -1,0 +1,131 @@
+/* project.css */
+
+header #box {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 4px;
+  display: inline-block;
+  position: relative;
+  top: 4.5px;
+  cursor: pointer;
+}
+
+header p {
+  display: inline-block;
+  position: relative;
+  left: 5px;
+  cursor: pointer;
+  border-bottom: 2px solid #88baba;
+  transition: all .2s;
+}
+
+header p:hover {
+  border-bottom: 2px solid #c9e2e1;
+}
+
+header #headerContainer {
+  margin-left: 1.5em;
+  width: fit-content;
+}
+
+@media only screen and (max-width: 500px) {
+  header {
+    display: none;
+  }
+}
+
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 10px 0;
+}
+
+figcaption {
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.8em;
+  font-style: italic;
+  text-align: center;
+  margin-top: 8px;
+}
+
+iframe {
+  height: 500px;
+  width: 100%;
+}
+
+section {
+  margin: 4em 0;
+}
+
+section h3 {
+  background-color: #88baba;
+  max-width: fit-content;
+  font-size: 1.75em;
+  font-weight: normal;
+  margin-bottom: 0px;
+}
+
+section h4 {
+  font-size: 1.25em;
+}
+
+section a {
+  border-bottom: 2px solid #88baba;
+  transition: all .2s;
+}
+
+section a:hover {
+  border-bottom: 2px solid #c9e2e1;
+}
+
+#intro h1 {
+  font-weight: normal;
+  font-size: 2.5em;
+  margin: 0 -2px -8px -2px;
+  text-align: center;
+}
+
+#intro p {
+  text-align: center;
+}
+
+#intro img {
+  display: block;
+  margin: 3em auto;
+  max-width: 90%;
+}
+
+#overview {
+  padding: 20px 2em;
+  background-color: #f6f9f7;
+}
+
+#overview h3 {
+  margin-left: -1em;
+}
+
+/* For multi-grid pictures */
+.newFeatures {
+  display: flex;
+}
+
+.newFeatures figure {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.newFeatures figure:nth-child(1) {
+  flex: calc(296/259);
+}
+
+.newFeatures figure:nth-child(2) {
+  flex: calc(579/282);
+}
+.newFeatures figure:nth-child(3) {
+  flex: calc(296/259);
+}

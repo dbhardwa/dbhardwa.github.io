@@ -1,0 +1,107 @@
+/* main.css */
+
+h1 {
+  font-weight: normal;
+  font-size: 5.91vw;
+  margin: 0 -2px 4px -2px;
+  text-align: center;
+}
+
+#logo img {
+  width: 100%;
+  height: 30px;
+}
+
+#blurb {
+  margin-bottom: 3em;
+}
+
+#links li {
+  display: inline-block;
+  margin-right: 0.6em;
+}
+
+#links li a {
+  border-bottom: 2px solid #88baba;
+  transition: all .2s;
+}
+
+#links li a:hover {
+  border-bottom: 2px solid #c9e2e1;
+}
+
+#break {
+  width: 100%;
+  height: 2px;
+  background-color: #979797;
+  margin: 0.2em 0 1.5em 0;
+}
+
+
+/* Project Previews */
+
+.projectContainer {
+  display: inline-block;
+  margin-bottom: 1.5em;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+  background: #FFFFFF;
+  box-shadow: 7px 7px 20px 0 rgba(179,179,179,0.50);
+  border: 2px solid #979797;
+}
+
+.projectContainer:hover {
+  transform: scale(1.02);
+  box-shadow: 12px 12px 22px 0 rgba(179,179,179,0.50);
+}
+
+.projectView img {
+  width: 100%;
+  transform: scale(0.9);
+}
+
+.projectDesc {
+  text-align: center;
+}
+
+@media only screen and (max-width: 1074px) {
+  h1 {
+    font-size: 10.8vw;
+    text-align: center;
+  }
+
+  .projectDesc {
+    margin: 0 2em 2.2em 2em;
+  }
+}
+
+@media only screen and (min-width: 1075px) {
+  .projectContainer {
+    width: 100%;
+    height: 230px;
+  }
+
+  .projectDesc {
+    display: inline-block;
+    display: table-cell;
+    vertical-align: middle;
+    height: 230px;
+    padding: 1em;
+    position: relative;
+    left: 5px;
+  }
+
+  .projectView {
+    /* Horizontal project view specific */
+    height: 230px;
+    width: 330px;
+    display: inline-block;
+    float: right;
+    padding: 0;
+  }
+
+  .projectView img {
+    position: relative;
+    left: 5px;
+  }
+}

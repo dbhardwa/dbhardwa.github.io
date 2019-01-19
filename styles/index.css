@@ -1,0 +1,62 @@
+/* index.css */
+
+body {
+  font-family: Helvetica, sans-serif;
+  color: #474747;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  font-family: 'Roboto Mono', monospace;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+main {
+  margin: 1em 25% 0 25%;
+}
+
+@media only screen and (max-width: 500px) {
+  main {
+    margin: 1em 5% 0 5%;
+  }
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 500;
+}
+
+#nav li {
+  position: absolute;
+  display: inline-block;
+  font-size: 1.2em;
+  font-weight: lighter;
+  cursor: pointer;
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  transition: all .2s;
+}
+
+#nav li:hover {
+  color: #848484;
+}
+
+#nav li:nth-child(1) {
+  left: 1em;
+}
+
+#nav li:nth-child(2) {
+  right: 1em;
+}

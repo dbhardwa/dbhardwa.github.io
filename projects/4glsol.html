@@ -1,0 +1,210 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Devansh Bhardwaj</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <!-- Local style sheets -->
+    <link rel="stylesheet" type="text/css" href="../styles/index.css">
+    <link rel="stylesheet" type="text/css" href="../styles/modules/project.css">
+  </head>
+  <body>
+    <header>
+      <div id="headerContainer">
+        <a href="../index.html">
+          <p>← home</p>
+        </a>
+      </div>
+    </header>
+    
+    <main>
+      <div id="intro">
+        <h1>eCommerce for the Metal Industry</h1>
+        <p>Web development and UI Design at 4GL Solutions</p>
+        <img src="../assets/projects/4gl-sol/4gl-main.png" alt="main 4glsol project preview" />
+      </div>
+
+
+      <section id="overview">
+        <div id="backdrop"></div>
+        <h3>Overview</h3>
+        <p>
+          My first co-op took place at 4GL Solutions, a provider for specialized ERP software for the metal industry. My co-worker, Jon Kwok, and myself developed the eCommerce platform for use by the customers of our customers to simplify and improve the experience for purchasing metal products. The main purpose of the project is to efficiently create new quotes by selecting from an array of products, manage existing quotes and orders, and access invoicing documents.
+          <br /><br />
+          My role was primarily as a font-end web developer and designer to improve the overall user experience of the application guided by research and implemented with React and Redux, along with testing through the use of Jest/Enzyme.
+          <br /><br />
+          <b>Context:</b> Co-op term
+          <br />
+          <b>Duration:</b> January - April 2018
+          <br />
+          <b>Role:</b> Web development, Design research, Design prototyping
+        </p>
+      </section>
+
+
+      <section>
+        <h3>Problem</h3>
+        <p>
+          When I first started on the app, the overall progress was at an early stage. Many of the features were still needing to be implemented while already existing features were still under-developed. Some of the work flows lacked consistency. With only the two of us handling the front end with time-frames for for demoing the app to clients, I needed to take a step in improving UI/UX of the application to address some of the flaws. On top of that there was plentiful refactoring and cleaning up to be done on the software side. There was also no test implementations, so we needed to incorporate a testing framework as well.
+        </p>
+        <figure>
+          <img src="../assets/projects/4gl-sol/initial-product.gif" alt="initial jQuery app before starting" />
+          <figcaption>The initial jQuery application before starting.</figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h3>Final Product</h3>
+        <p>
+          Throughout the term, I was able to make several user-experience improvements, while also refactoring the jQuery codebase to a modular approach with React. Here is a preview of the final product:
+        </p>
+        <figure>
+          <img src="../assets/projects/4gl-sol/final-product.gif" alt="final preview of the eCommerce app" />
+          <figcaption>The final product implemented with React.</figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h3>Initial Approach</h3>
+        <p>
+          My initial approach was to play with the existing application. I would manually test each feature the app offered, and consider any edge cases (i.e. attempting to add a negative number of pieces of a particular product).
+        </p>
+        <p>
+          Considering general features for an eCommerce app, I would ask myself how I would expect the app to work to make my own experience a delightful one. By scrutinizing present features and considering the perspective of a customer, I was able to make many overall improvements to the feel of the app. Here were a few notable ones:
+        </p>
+        <div class="newFeatures">
+          <figure>
+              <img class="static" src="../assets/projects/4gl-sol/pl-search-static.jpg" alt="Searching for product lines feature" />
+              <figcaption>A quick way to search for product lines.</figcaption>
+          </figure>
+          <figure>
+            <img class="static" src="../assets/projects/4gl-sol/hover-sc-static.jpg" alt="A shopping cart badge and hover to get a quick preview." />
+            <figcaption>A shopping cart badge and hover to get a quick preview.</figcaption>
+          </figure>
+          <figure>
+              <img class="static" src="../assets/projects/4gl-sol/loading-static.png" alt="A clear indicator of loading PDF files and email requests." />
+              <figcaption>A clear indicator of loading PDF files and email requests.</figcaption>
+          </figure>
+        </div>
+        <div class="newFeatures">
+          <figure>
+              <img src="../assets/projects/4gl-sol/prod-log.gif" alt="A quick way to view product logs." />
+              <figcaption>A quick way to view product logs.</figcaption>
+          </figure>
+          <figure>
+              <img src="../assets/projects/4gl-sol/pagination.gif" alt="An improved pagination in contrast to two Prev / Next buttons with no indication of the last page." />
+              <figcaption>An improved pagination in contrast to two Prev / Next buttons with no indication of the last page.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section>
+        <h3>Research through Interviews</h3>
+        <p>
+          My knowledge of how the metal industry worked was rather limited, which made it hard to think of strong product requirements. I needed to get into the mindset of a typical customer who would be purchasing metal products. Luckily, the company was already serving many companies with the main ERP software, so it was easy to come into contact with people well-familiarized with the metal industry.
+          <br /><br />
+          I first consulted my boss who had many connections with people having first hand experience in the industry, as well as the fact that he himself was experienced. Through him, we were able to reach out to clients to get a solid grasp of what was needed idea.
+          <br /><br />
+          One major takeaway was the idea that contractors are likely to buy the same core products that they need. This led to the idea of adding a favorites feature, where users could save products and quickly access them to add to their shopping cart.
+        </p>
+        <figure>
+            <img src="../assets/projects/4gl-sol/favorites.gif" alt="A product from any product line can be favorited  and then conveniently accessed." />
+            <figcaption>A product from any product line can be favorited  and then conveniently accessed.</figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h3>Competitors and eCommerce</h3>
+        <p>
+          After conducting interviews and gaining valuable information, I then did some research on current competitors, as well as what an eCommerce website should have in general. This was my first experience working in eCommerce, so I needed some further guidance on the essentials for the application.
+        </p>
+        <p>
+          One notable competitor offered a glimpse into the eCommerce of metals. The application did an excellent job on providing all the relevant details a customer might be interested in. However, there was a clear weakness in the look of the application. Furthermore, it was hard to quickly locate a particular product of interest. We used this point of reference to establish overall strengths and weaknesses so that we could build on the app and improve.
+        </p>
+        <figure>
+          <img src="../assets/projects/4gl-sol/competitor.png" alt="Competitor website." />
+          <figcaption>An eCommerce competitor.</figcaption>
+        </figure>
+        <p>
+          For further considerations, I looked into the functionality of eCommerce websites in general. One application I found in the fashion industry, ASOS, made it very easy to filter clothing by a multitude of filters (i.e. one page allowed filters for Sort, Product Type, Brand, Size, Colour, Price Range, etc.). This allows for finding exactly what a user needs in an efficient manner. This idea was implemented into the application for every module.
+        </p>
+        <figure>
+            <img src="../assets/projects/4gl-sol/filtering.gif" alt="Filtering products, quotes, invoices etc." />
+            <figcaption>Filtering products, quotes, invoices etc.</figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h3>Finding a consistency in creating new quotes and modifying existing quotes</h3>
+
+        <p>
+          As the application was maturing through development, I noticed a major flaw emerge with the consistency in design. The core feature of the eCommerce app was to create a quote for metal products. This process was accompanied by methods of efficiently filtering a product or referring to favorites. However, from the current ERP software already being used, we found that customers were having to modify existing quotes just as frequently, if not more. The glaring flaw was that adding to an existing quote was much more difficult and time-consuming than creating a new quote.
+        </p>
+        <figure>
+          <img src="../assets/projects/4gl-sol/add-eq-old.png" alt="The old method for adding to an existing product. This would require the customer to find the particular Product Id. From here, they are also unable to quickly access their favorites." />
+          <figcaption>The old method for adding to an existing product. This would require the customer to find the particular Product Id. From here, they are also unable to quickly access their favorites.</figcaption>
+        </figure>
+
+        <p>
+          This led me to establish a work flow for editing existing quotes which would give access to customers the same convenience that making a new quote offered. I could accomplish this by making the work flow as consistent as possible, so that both process were familiar to the user with little differentiability.
+          <br /><br />
+          Utilizing React also helped significantly. The product shop component could be re-used in both instances with a tweak to the functionality of the add button based on the context.
+        </p>
+        <figure>
+          <img src="../assets/projects/4gl-sol/add-eq-initial-iter.gif" alt="The initial iteration for improving modifying quotes." />
+          <figcaption>The initial iteration for improving modifying quotes.</figcaption>
+        </figure>
+
+        <p>
+          While I was pretty happy with the initial implementation, I thought the approach could still be improved. In the next iteration I want to make it so that the user would not have to leave their existing quote to add a quote. This would make it very easy to toggle adding a product, as well as having the exact same features as available when creating a quote. I also added a clear indication that an added product was still temporary by adding a yellow filter over it.
+        </p>
+        <figure>
+          <img src="../assets/projects/4gl-sol/add-eq-new.gif" alt="The latest iteration of adding a product to an existing quote." />
+          <figcaption>The latest iteration of adding a product to an existing quote.</figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h3>User Testing</h3>
+        <p>
+          After the first demo was released, the application was presented to various existing clients for feedback. The application was sent with screenshots and a set of questions to inquire about how the app might be further improved. One point of criticism was the overall emptiness of the landing page when someone would login. This led us to look into creating a personalized dashboard on user entry. The second concern was the lack of indication when a fulfilled shopping cart was submitted to be created into a quote. The screen would simply clear out the shopping cart with no indication of what happened. This led to a more transparent view of what was going on for the user, with a screen indicating the successful submission as well as a link to preview the new quote.
+        </p>
+        <figure>
+          <img src="../assets/projects/4gl-sol/shopping-cart-submit.gif" alt="The latest iteration of adding a product to an existing quote." />
+          <figcaption>The latest iteration of adding a product to an existing quote.</figcaption>
+        </figure>
+      </section>
+
+
+
+      <section>
+        <h3>The Software Development Process</h3>
+        <p>
+          When I came into this project, the code was solely written in jQuery as a single page application. While this may have sufficed for when the application was smaller, there was many glaring issues as the project grew. For one, the code was all in a single file which made it fairly hard to maintain and refactor. There was no routing or testing implemented, with very minimal css styling.
+        </p>
+        <figure style="float: right; width: 41%; margin-left: 25px">
+          <img src="../assets/projects/4gl-sol/component-diagram.jpg" alt="Component diagram of application" />
+          <figcaption>Component diagram of application.</figcaption>
+        </figure>
+
+        <p>
+          React served as an excellent solution to manage a growing code base, and be ready for the eventual point of scaling up the application. React allowed to tap into opportunities for code reusability helping resolve significant code duplications.
+          <br /><br />
+          I started writing the entire codebase using React, and approached it component by component to ensure each piece could be re-used to it’s full potential when necessary. Utilizing React also served as an opportunity to familiarize myself with additional tools, such as React-router, Jest and Enzyme for testing components, as well as Redux to better maintain congested parts of the state.
+          <br /><br />
+          Along side the heavy front end development, there was some work that had to be done on the Node side to handle authentication. This was achieved through the use of express and passport. Working on a full stack application at 4GL Solutions also lead me to learning the basics of Git, postman, and improving in debugging with Chrome Dev Tools.
+          <br /><br />
+          Overall, the development process helped me grow significantly as a developer. Even after I was able to re-factor the entire codebase to React, there was several opportunities to refactor and improve upon the code for the sake of efficiency and understandability.
+        </p>
+      </section>
+
+      <section>
+        <h3>Conclusion</h3>
+        <p>
+          The four month work term flew by very fast. I was able to learn so much about the process of design by putting the theory I learned in courses into practice in a real-world application. My web development skills and knowledge improved tremendously as I was able to take a deep dive into building an application with modern web technologies. Working on the application also taught me much more about building an eCommerce app and learning to empathize with prospective users to develop a product which conforms to their requirements. Finally, I was able to even improve my communication skills as I participated in weekly meetings to ensure the project was on track. Leaving the eCommerce project felt bittersweet since there was still stuff I wanted to improve upon. For example, making the application more responsive for the phone. Nevertheless, working at 4GL Solutions was a fantastic experience, especially thanks to my supportive co-workers. I look forward to future projects that await.
+        </p>
+      </section>
+
+    </main>
+  </body>
+</html>
