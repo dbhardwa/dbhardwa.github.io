@@ -1,0 +1,167 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Devansh Bhardwaj</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <!-- Local style sheets -->
+    <link rel="stylesheet" type="text/css" href="../styles/index.css">
+    <link rel="stylesheet" type="text/css" href="../styles/modules/project.css">
+</head>
+
+<body>
+    <header>
+        <div id="headerContainer">
+            <a href="../index.html">
+                <p>← home</p>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <div id="intro">
+            <h1>Business Process Manager App Redesign</h1>
+            <p>A heuristic evaluation and design solution iteration</p>
+            <img src="../assets/projects/process/process-main.png" alt="main processes project preview" />
+        </div>
+
+
+        <section id="overview">
+            <div id="backdrop"></div>
+            <h3>Overview</h3>
+            <p>
+                This product redesign proposal was conducted out of self-interest in my own time for my previous work
+                term. I conducted this study to explore avenues in which mapping of data, information access cost, and
+                the overall experience of the application in question could be improved.
+
+                The application discussed is a business process management system which provides a number of process
+                templates to achieve some business goal. The templates are composed of reusable “blocks” which are
+                classified as automated (code driven) or manual (requiring human intervention).
+            </p>
+        </section>
+
+
+        <section>
+            <h3>Problem</h3>
+            <p>
+                From a user experience standpoint, the application considered can become incredibly complex as several
+                blocks are used in tandem to construct varying business processes. For especially convoluted processes,
+                it becomes necessary to present a user interface that provides the information in a coherent manner so
+                that the state of a process can be quickly discerned.
+            </p>
+            <p>
+                The application itself had not involved any designers throughout the development process and thus the
+                UI/UX focus is lacking in many parts of the project.
+            </p>
+            <p>
+                In the current application, users refer to the processes page in which they select the active process of
+                interest from a list of processes. Figure 1 below shows the possible options. The problem lies in the
+                fact that the screen shows fragmented bits of information leaving the onus on the user to make sense of
+                everything.
+            </p>
+            <figure>
+                <img src="../assets/projects/process/process-tabs.png" alt="List of process tabs" />
+                <figcaption>Figure 1: Possible options to view in a specific processes.</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h3>User Journey</h3>
+            <p>
+                There are two primary user personas to consider: the process administrator and the task worker. The
+                process administrator user was focused because the role has more complicated patterns of application
+                usage. Figure 2 demonstrates some of the major journey breakdowns. The focus of this case study was to
+                enhance the understanding of an active process state.
+            </p>
+            <p>
+                Information about the different personas came from qualitative data the team had about client business
+                and user requirements.
+            </p>
+            <figure>
+                <img src="../assets/projects/process/journey-breakdown.png" alt="Admin user journey breakdown" />
+                <figcaption>Figure 2: A breakdown of major journeys the process administrator follows.</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h3>Heuristic Evaluation</h3>
+            <p>
+                Before considering solutions, an initial heuristic evaluation was conducted on the current application
+                state. The main principles referenced came from Wickens’ principles from An Introduction to Human
+                Factors Engineering and Norman’s principles of interaction design from The Design of Everyday Things.
+            </p>
+            <p>
+                From the evaluation conducted, it was found that the current application demonstrates weak
+                <b>mapping</b> of
+                data between the process history and process diagram. The process diagram is a static image which cannot
+                be interacted with restricting the user from directly manipulating the diagram to query for information.
+                The two sets of data are tightly coupled, but the UI fails to demonstrate such relationship.
+            </p>
+            <p>
+                The application also violates attentional principles of display, namely the increase in <b>information
+                    access cost</b> due to a lack of visual proximity of the data. This causes the user to have to
+                constantly shift contexts which in turn affects their attentional and working memory resources.
+            </p>
+            <figure>
+                <img src="../assets/projects/process/mapping-example.png" alt="Data mapping example" />
+                <figcaption>Figure 3: The aim is to provide a clear relationship between two elements of the UI.
+                </figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h3>Solution</h3>
+            <p>
+                Some initial sketches were done to consider varying low-fidelity prototypes. The most convincing concept
+                sketch involved combining the process history and process diagram into a unified display.
+            </p>
+            <figure>
+                <img src="../assets/projects/process/lfp.jpg" alt="A few concept sketches" />
+                <figcaption>Figure 4: Numerous wireframes and considerations of user flow were drawn (all low-fidelity
+                    documents produced are available upon request).
+                </figcaption>
+            </figure>
+            <p>
+                Some key features of the redesign can be seen in figure 5 below. The process events window serves as the
+                source of truth as the process history. This is in contrast from the current application which does not
+                include every event (i.e. process documents are in a separate tab). The process events can then be
+                filtered and searched to quickly find events of interest.
+            </p>
+            <p>
+                To further indicate the strong coupling between the process events window and the process diagram, a
+                block from the diagram can be selected which then filters process events to the relevant events which
+                occurred in the block.
+            </p>
+            <figure>
+                <img src="../assets/projects/process/process-solution-1.png" alt="Solution visual 1" />
+                <figcaption>Figure 5: A designed solution outlining some key features.
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="../assets/projects/process/process-solution-2.png" alt="Solution visual 2" />
+                <figcaption>Figure 6: Selecting an event informs the user of where it occurred in the process.
+                </figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h3>Reflection</h3>
+            <p>
+                Conducting the redesign process was very engaging and challenging. It was very hard initially to
+                understand the different user journeys because the application itself can be very complicated. As a
+                result, initial time was taken to understand the application itself.
+            </p>
+            <p>
+                For the presented iteration, next steps for the redesign might be to conduct usability tests on
+                administrators or mock internal users without. The focus would be on observing how the user gains an
+                understanding of an active process and whether the changes make this challenge more efficient
+                and accurate. Feedback provided would help guide the next design iteration before implementation is
+                considered.
+            </p>
+
+        </section>
+    </main>
+</body>
+
+</html>
